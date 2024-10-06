@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889407274440524583}
-  - component: {fileID: 5404636644258524438}
-  - component: {fileID: 5142851764743716761}
   - component: {fileID: 6361948812698212030}
   m_Layer: 0
   m_Name: Tank
@@ -36,59 +34,6 @@ Transform:
   - {fileID: 7350349063769887218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5404636644258524438
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4518244394994751827}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.15581608, y: 0}
-  m_Radius: 3.758864
---- !u!114 &5142851764743716761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4518244394994751827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c913e90acd25dbe4798e2e995961b332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  atackDelay: 3
-  boomPrefab: {fileID: 6296424165715645603, guid: 87e118f8c0e436d44b6bf7122ea821ef, type: 3}
-  head: {fileID: 7350349063769887218}
-  headDown: {fileID: 1167618021, guid: ac0dc32dbfb9d2b4680b063c2bcd2c6f, type: 3}
-  headUp: {fileID: 854190252, guid: ac0dc32dbfb9d2b4680b063c2bcd2c6f, type: 3}
 --- !u!50 &6361948812698212030
 Rigidbody2D:
   serializedVersion: 5
@@ -127,6 +72,7 @@ GameObject:
   - component: {fileID: 671099346276262782}
   - component: {fileID: 3063581173920132210}
   - component: {fileID: 1479358696272276952}
+  - component: {fileID: 6905565440450824724}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -238,7 +184,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.037216067, y: -0.05582404}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -248,8 +194,27 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.875, y: 1.625}
+  m_Size: {x: 1.5772722, y: 1.2156234}
   m_EdgeRadius: 0
+--- !u!114 &6905565440450824724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466191507401132066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c913e90acd25dbe4798e2e995961b332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boomOffset: 0.3
+  atackDelay: 3
+  detectionRadius: 2
+  headDown: {fileID: 1167618021, guid: ac0dc32dbfb9d2b4680b063c2bcd2c6f, type: 3}
+  headUp: {fileID: 854190252, guid: ac0dc32dbfb9d2b4680b063c2bcd2c6f, type: 3}
+  boomPrefab: {fileID: 6296424165715645603, guid: 87e118f8c0e436d44b6bf7122ea821ef, type: 3}
+  head: {fileID: 7350349063769887218}
 --- !u!1 &8685710373321982479
 GameObject:
   m_ObjectHideFlags: 0

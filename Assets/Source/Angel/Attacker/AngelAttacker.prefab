@@ -99,7 +99,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 07f590d0b4419684fa923dfaf7884378, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 0.5
-  endReachedDistance: 0.2
+  endReachedDistance: 0.9
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -256,6 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9169620017677615045}
   - component: {fileID: 3287537639290109514}
+  - component: {fileID: 8861232583303136875}
   - component: {fileID: 6984084613010913852}
   m_Layer: 3
   m_Name: Logic
@@ -295,6 +296,22 @@ MonoBehaviour:
   _outline: {fileID: 6613833552373602534}
   _animator: {fileID: 1413800049525380194}
   _spriteRenderer: {fileID: 5745635886509466819}
+--- !u!114 &8861232583303136875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5603843030946534549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74bd385d1b2f9fd4486a957e3b8b5805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atackDelay: 3
+  detectionRadius: 1
+  _animator: {fileID: 1413800049525380194}
+  _angel: {fileID: 3287537639290109514}
 --- !u!61 &6984084613010913852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -329,7 +346,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.9522667, y: -0.022343338}
+  m_Offset: {x: -0.985345, y: -0.011317253}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -339,5 +356,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.6265059, y: 1.5809344}
+  m_Size: {x: 2.075198, y: 1.1839929}
   m_EdgeRadius: 0

@@ -74,7 +74,17 @@ public class Angel : MonoBehaviour
     private void LookOnTarget()
     {
         Vector2 direction = (_aiPath.steeringTarget - transform.position).normalized;
+        Side(direction);
+        Flip(direction);
+    }
+
+    private void Side(Vector2 direction)
+    {
         _animator.SetBool(IsBackside, direction.y > 0.1f);
+    }
+
+    public void Flip(Vector2 direction)
+    {
         _spriteRenderer.flipX = direction.x < 0f;
     }
 }
