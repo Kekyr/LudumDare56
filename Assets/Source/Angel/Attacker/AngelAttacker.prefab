@@ -312,6 +312,7 @@ MonoBehaviour:
   detectionRadius: 1
   _animator: {fileID: 1413800049525380194}
   _angel: {fileID: 3287537639290109514}
+  _damage: 25
 --- !u!61 &6984084613010913852
 BoxCollider2D:
   m_ObjectHideFlags: 0

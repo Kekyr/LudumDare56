@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Outline : MonoBehaviour
+public class SpriteOutline : MonoBehaviour
 {
     [SerializeField] private Color _color = Color.white;
     [SerializeField] private SpriteRenderer _spriteRenderer;
