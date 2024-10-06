@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: 5273042929519483161}
   - component: {fileID: 44485982990509588}
   - component: {fileID: 8317070205807776355}
+  - component: {fileID: 7419903124052301602}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1045,6 +1046,20 @@ MonoBehaviour:
   enemyTag: Enemy
   enemyCount: {fileID: 2712801852629617289}
   timer: {fileID: 8086802030922517215}
+--- !u!114 &7419903124052301602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7223789416565165164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ac2ca3c48121a4e97e76678cc82b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  victoryPanel: {fileID: 6945509659423079086}
+  param: {fileID: 8317070205807776355}
 --- !u!1 &8546479202162066978
 GameObject:
   m_ObjectHideFlags: 0
