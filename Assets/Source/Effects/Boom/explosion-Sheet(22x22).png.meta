@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6aac021c2f2de8c48884ec7f67114994
+guid: 5f6b742945b4a904aa7fdca8e0299817
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,19 +72,6 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -106,43 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass_tiles_0
+      name: explosion-Sheet(22x22)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1716f2e52fd1251469c74f38ba4c9861
-      internalID: 1131623866
+      spriteID: ffc8fb83b09280b45b98965d295a9902
+      internalID: -1363602213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tiles_1
+      name: explosion-Sheet(22x22)_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 22
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3eaafa6ae549c468f1af64706cac98
-      internalID: 926307229
+      spriteID: 7c7dbcc4b7151d1499d25bd8c9269bd9
+      internalID: -643552071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_tiles_2
+      name: explosion-Sheet(22x22)_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 44
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +156,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ed71e2eba41ca344b2d1fe8d0986a0d
-      internalID: 1788100403
+      spriteID: 5206dbfd04ff85c4abbd5cf7ef91d87c
+      internalID: 844678613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-Sheet(22x22)_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4dc16f93b4e7247b7988f4f7252bfb
+      internalID: -1245648743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-Sheet(22x22)_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28a631d307c3fe40a11085935c0932c
+      internalID: -1620584301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-Sheet(22x22)_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e253a752a7bf47b5ac5f54ba6ad0f
+      internalID: -215934873
       vertices: []
       indices: 
       edges: []
@@ -205,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f05333f7b89b6fb4b8b3e3ba8cf8db50
+    spriteID: 44c04a88cc2b0b6488f49fb783bfe3c4
     internalID: 0
     vertices: []
     indices: 
@@ -215,9 +242,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grass_tiles_0: 1131623866
-      grass_tiles_1: 926307229
-      grass_tiles_2: 1788100403
+      explosion-Sheet(22x22)_0: -1363602213
+      explosion-Sheet(22x22)_1: -643552071
+      explosion-Sheet(22x22)_2: 844678613
+      explosion-Sheet(22x22)_3: -1245648743
+      explosion-Sheet(22x22)_4: -1620584301
+      explosion-Sheet(22x22)_5: -215934873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
