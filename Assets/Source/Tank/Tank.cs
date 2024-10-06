@@ -6,8 +6,9 @@ public class Tank : MonoBehaviour
     private List<Angel> targets = new List<Angel>();
     private Angel currentTarget;
 
-
+    [SerializeField]private float boomOffset = 0.3f;
     [SerializeField]private float atackDelay;
+    [SerializeField]private float detectionRadius;
     private float timer;
 
     [SerializeField]private GameObject boomPrefab;
@@ -23,19 +24,27 @@ public class Tank : MonoBehaviour
         headRenderer = head.gameObject.GetComponent<SpriteRenderer>();
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-       Angel angel = collision.gameObject.GetComponent<Angel>();
-       if(angel != null && !targets.Contains(angel))
-       {
-            targets.Add(angel);
-            if(currentTarget == null)
-                currentTarget = angel;
-       }
-    }
-
     private void Update()
     {
+         // Находим всех объектов Angel в радиусе detectionRadius
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+        
+        targets.Clear(); // Очищаем список перед обновлением
+
+        foreach (Collider2D collider in colliders)
+        {
+            Angel angel = collider.GetComponent<Angel>();
+            if (angel != null && !targets.Contains(angel))
+            {
+                targets.Add(angel);
+            }
+        }
+        if (targets.Count > 0)
+            currentTarget = targets[0];
+        
+        else
+            currentTarget = null;
+        
         if(currentTarget!=null)
         {
             RotateTo(currentTarget.transform);
@@ -43,7 +52,8 @@ public class Tank : MonoBehaviour
             if(timer <= 0)
             {
                 timer = atackDelay;
-                GameObject boom = Instantiate(boomPrefab, currentTarget.transform.position, Quaternion.identity);
+                Vector3 boomPos = new Vector3(currentTarget.transform.position.x, currentTarget.transform.position.y+boomOffset,currentTarget.transform.position.z);
+                GameObject boom = Instantiate(boomPrefab, boomPos, Quaternion.identity);
                 Destroy(boom, 0.4f);
             }
         }
