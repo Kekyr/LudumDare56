@@ -4,16 +4,16 @@ using UnityEngine.InputSystem;
 
 public class Commander : MonoBehaviour
 {
-    [SerializeField] private Angel _angel;
+    [SerializeField] private Angel[] _angels;
     [SerializeField] private Camera _camera;
 
     private Angel _selectedAngel;
 
     private void OnEnable()
     {
-        if (_angel == null)
+        if (_angels == null)
         {
-            throw new ArgumentNullException(nameof(_angel));
+            throw new ArgumentNullException(nameof(_angels));
         }
 
         if (_camera == null)
@@ -21,12 +21,18 @@ public class Commander : MonoBehaviour
             throw new ArgumentNullException(nameof(_camera));
         }
 
-        _angel.Selected += OnSelected;
+        foreach (Angel angel in _angels)
+        {
+            angel.Selected += OnSelected;
+        }
     }
 
     private void OnDisable()
     {
-        _angel.Selected -= OnSelected;
+        foreach (Angel angel in _angels)
+        {
+            angel.Selected -= OnSelected;
+        }
     }
 
     private void Update()
