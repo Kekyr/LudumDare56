@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
@@ -11,6 +10,7 @@ public class Attack : MonoBehaviour
     [SerializeField] private float detectionRadius;
     [SerializeField] private Animator _animator;
     [SerializeField] private Angel _angel;
+    [SerializeField] private float _damage;
 
     private List<Tank> targets = new List<Tank>();
     private Tank currentTarget;
@@ -38,6 +38,7 @@ public class Attack : MonoBehaviour
         foreach (Collider2D collider in colliders)
         {
             Tank tank = collider.GetComponent<Tank>();
+            
 
             if (tank != null && !targets.Contains(tank))
             {
@@ -63,6 +64,7 @@ public class Attack : MonoBehaviour
             {
                 timer = atackDelay;
                 _animator.SetTrigger(AttackTrigger);
+                currentTarget.HealthPoints.TakeDamage(_damage);
             }
         }
     }

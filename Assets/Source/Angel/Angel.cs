@@ -9,7 +9,7 @@ public class Angel : MonoBehaviour
     private readonly string IsBackside = "IsBackside";
 
     [SerializeField] private AIPath _aiPath;
-    [SerializeField] private Outline _outline;
+    [SerializeField] private SpriteOutline _outline;
     [SerializeField] private Animator _animator;
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
