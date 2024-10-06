@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class Counter : MonoBehaviour
+public class ParamCounter : MonoBehaviour
 {
     [SerializeField] private string enemyTag;
     [SerializeField] private Text enemyCount;
