@@ -188,6 +188,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _color: {r: 0.75246793, g: 0.038810864, b: 0.89433956, a: 1}
   _spriteRenderer: {fileID: 546748238}
+--- !u!95 &546748241 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1413800049525380194, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
+  m_PrefabInstance: {fileID: 8111868929301027722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,9 +3685,21 @@ PrefabInstance:
       propertyPath: _outline
       value: 
       objectReference: {fileID: 546748240}
+    - target: {fileID: 3287537639290109514, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 546748241}
+    - target: {fileID: 3287537639290109514, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 546748238}
     - target: {fileID: 4924921160297480107, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
       propertyPath: m_Name
       value: AngelAttacker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745635886509466819, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5745635886509466819, guid: ab19158f957440b48947f4faadadf0ca, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd2ccd3681d918b469ad38983ea646ee
+guid: 83b84693fb025f742ac89c34a8192d1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,111 +136,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel_atacker_idle_backside_0
+      name: angel_atacker_walk_0
       rect:
         serializedVersion: 2
         x: 8
         y: 1
         width: 16
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1c882642aafb64fa6c44b2098f99e2
-      internalID: -557338582
+      spriteID: f0379c42ba737f145b9dae545858b8d5
+      internalID: 731772764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_backside_1
+      name: angel_atacker_walk_1
       rect:
         serializedVersion: 2
         x: 40
         y: 1
         width: 16
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f412a4890b6c53849bdef6f2ca4437a5
-      internalID: 1032908410
+      spriteID: 3ae0589b8dd3d2147bcaa5aaa42cf75f
+      internalID: 1260032798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_backside_2
+      name: angel_atacker_walk_2
       rect:
         serializedVersion: 2
         x: 72
         y: 1
         width: 16
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d16f1c5c6933064892998d7f71dae66
-      internalID: -425135185
+      spriteID: 223e990905bcbc747a1ba795af408e34
+      internalID: 1416109819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_backside_3
+      name: angel_atacker_walk_3
       rect:
         serializedVersion: 2
         x: 104
         y: 1
         width: 16
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f116d778571d90545bf2a96643aeb3b8
-      internalID: -1684984981
+      spriteID: 9435a9cd08a1dcf4894a5f5f41f1cdf5
+      internalID: 174756481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_backside_4
+      name: angel_atacker_walk_4
       rect:
         serializedVersion: 2
         x: 136
         y: 1
         width: 16
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d8dc89d20c7de49b091edd025e3f72
-      internalID: -1226173222
+      spriteID: a081bc4f25fdbe14788c2bce4f9bd71c
+      internalID: -607447969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angel_atacker_walk_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77e5c655e83a4b46857a501d3554390
+      internalID: -584723788
       vertices: []
       indices: 
       edges: []
@@ -249,7 +271,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e61af3793c24c414ea07fa9fb6f5a592
+    spriteID: d878782ff67983843906a8a7a624ba8c
     internalID: 0
     vertices: []
     indices: 
@@ -259,11 +281,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      angel_atacker_idle_backside_0: -557338582
-      angel_atacker_idle_backside_1: 1032908410
-      angel_atacker_idle_backside_2: -425135185
-      angel_atacker_idle_backside_3: -1684984981
-      angel_atacker_idle_backside_4: -1226173222
+      angel_atacker_walk_0: 731772764
+      angel_atacker_walk_1: 1260032798
+      angel_atacker_walk_2: 1416109819
+      angel_atacker_walk_3: 174756481
+      angel_atacker_walk_4: -607447969
+      angel_atacker_walk_5: -584723788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
