@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f491121860f4b6448a69db999e602d88
+guid: 5f6b742945b4a904aa7fdca8e0299817
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,19 +72,6 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Win64
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -106,119 +93,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel_atacker_idle_0
+      name: explosion-Sheet(22x22)_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea823b5dc04893b408c744e1943c70dc
-      internalID: 684284451
+      spriteID: ffc8fb83b09280b45b98965d295a9902
+      internalID: -1363602213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_1
+      name: explosion-Sheet(22x22)_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 1
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 22
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58a8ad19ff7d83145b61d3afa42c2e82
-      internalID: -1691219395
+      spriteID: 7c7dbcc4b7151d1499d25bd8c9269bd9
+      internalID: -643552071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_2
+      name: explosion-Sheet(22x22)_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 44
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320664d813945ed45b013669a119d391
-      internalID: 105490517
+      spriteID: 5206dbfd04ff85c4abbd5cf7ef91d87c
+      internalID: 844678613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angel_atacker_idle_3
+      name: explosion-Sheet(22x22)_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 66
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 723a605b7d69f4e48a5751005b351e61
-      internalID: -1333860687
+      spriteID: 4e4dc16f93b4e7247b7988f4f7252bfb
+      internalID: -1245648743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-Sheet(22x22)_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28a631d307c3fe40a11085935c0932c
+      internalID: -1620584301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-Sheet(22x22)_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e253a752a7bf47b5ac5f54ba6ad0f
+      internalID: -215934873
       vertices: []
       indices: 
       edges: []
@@ -227,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d70921be4d87d08458c8ca5a949f8165
+    spriteID: 44c04a88cc2b0b6488f49fb783bfe3c4
     internalID: 0
     vertices: []
     indices: 
@@ -237,10 +242,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      angel_atacker_idle_0: 684284451
-      angel_atacker_idle_1: -1691219395
-      angel_atacker_idle_2: 105490517
-      angel_atacker_idle_3: -1333860687
+      explosion-Sheet(22x22)_0: -1363602213
+      explosion-Sheet(22x22)_1: -643552071
+      explosion-Sheet(22x22)_2: 844678613
+      explosion-Sheet(22x22)_3: -1245648743
+      explosion-Sheet(22x22)_4: -1620584301
+      explosion-Sheet(22x22)_5: -215934873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
