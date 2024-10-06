@@ -45,14 +45,11 @@ public class Angel : MonoBehaviour
         if (_isMoving == true && _aiPath.reachedDestination == false)
         {
             LookOnTarget();
-            Debug.Log("IsMoving");
         }
         else if (_isMoving == true && _aiPath.reachedDestination == true)
         {
             _isMoving = false;
-            Debug.Log("Reached destination");
             _animator.SetBool(IsWalking, false);
-            //LookOnTarget();
         }
     }
 
@@ -77,24 +74,7 @@ public class Angel : MonoBehaviour
     private void LookOnTarget()
     {
         Vector2 direction = (_aiPath.steeringTarget - transform.position).normalized;
-        Debug.Log($"Direction to target: X: {direction.x} Y: {direction.y}");
-
-        if (direction.y <= 0.1f)
-        {
-            _animator.SetBool(IsBackside, false);
-        }
-        else
-        {
-            _animator.SetBool(IsBackside, true);
-        }
-
-        if (direction.x < 0f)
-        {
-            _spriteRenderer.flipX = true;
-        }
-        else
-        {
-            _spriteRenderer.flipX = false;
-        }
+        _animator.SetBool(IsBackside, direction.y > 0.1f);
+        _spriteRenderer.flipX = direction.x < 0f;
     }
 }
