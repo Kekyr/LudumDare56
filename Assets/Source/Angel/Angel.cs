@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Angel : MonoBehaviour
 {
     [SerializeField] private AIPath _aiPath;
+    [SerializeField] private Outline _outline;
 
     public event Action<Angel> Selected;
 
@@ -19,6 +20,7 @@ public class Angel : MonoBehaviour
 
     public void MoveTo(Vector3 position)
     {
+        _outline.UpdateOutline(false);
         _aiPath.destination = position;
     }
 
@@ -26,6 +28,7 @@ public class Angel : MonoBehaviour
     {
         if (Mouse.current.leftButton.IsPressed())
         {
+            _outline.UpdateOutline(true);
             Selected?.Invoke(this);
         }
     }
