@@ -9,10 +9,19 @@ public class ParamCounter : MonoBehaviour
 
     [SerializeField] private Text timer;
 
+    [SerializeField] VictoryWindowShower wonPanel;
+
+    public int EnemiesCount
+    {
+          get { return GameObject.FindGameObjectsWithTag(enemyTag).Length; }
+    }
+
 
     void Update()
     {
-        elapsedTime += Time.deltaTime;
+        if(wonPanel.isWon == false){
+            elapsedTime += Time.deltaTime;
+        }
         CountEnemyies();
         CountTime();
 
@@ -20,8 +29,7 @@ public class ParamCounter : MonoBehaviour
 
     private void CountEnemyies()
     {
-        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(enemyTag);
-        enemyCount.text = ": " + objectsWithTag.Length.ToString();
+        enemyCount.text = ": " + EnemiesCount.ToString();
     }
     private void CountTime()
     {
